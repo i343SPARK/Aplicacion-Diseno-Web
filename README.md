@@ -47,3 +47,15 @@ Markdown es un lenguaje de marcado ligero que se utiliza para añadir formato a 
 
 ### Revertir a una confirmación específica
 - `git revert [id-de-la-confirmación]`
+
+
+### Actividad 7 & Tarea 6
+## Descripcion del proyecto:
+Este proyecto es un sistema de gestión para una pequeña escuela de robótica, diseñado para facilitar a los profesores la organización y entrega de cursos de robótica. La plataforma permite la creación de perfiles de usuario para estudiantes, docentes y administradores, cada uno con roles y permisos distintos. Los cursos, que son el núcleo del sistema, están cuidadosamente estructurados con títulos, material didáctico asociado y se categorizan en diferentes niveles de habilidad, desde principiante hasta avanzado.
+
+El sistema se apoya en un back-end robusto construido con Laravel 10, utilizando Eloquent ORM para la interacción con la base de datos relacional. Se ha configurado un conjunto de migraciones, modelos, seeders y factories para manejar la creación y población inicial de la base de datos con datos de prueba. Además, se implementó un sistema de autenticación para asegurar el acceso y la gestión adecuada de la información.
+
+El desarrollo ha seguido las mejores prácticas de Laravel, incluyendo el uso de Artisan CLI para manejar migraciones y seeders, lo que garantiza una estructura de base de datos sólida y un proceso de desarrollo eficiente. Con la inclusión de factories y seeders, se ha facilitado la simulación de un entorno de producción, permitiendo pruebas exhaustivas y la demostración de funcionalidades antes de su despliegue real.
+
+## Diagrama ER
+![Imagen de Portada](./imagenes/DAW%20Act%207%20ER.png)

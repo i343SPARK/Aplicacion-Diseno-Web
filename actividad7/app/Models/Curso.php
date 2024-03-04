@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Curso extends Model
 {
     // ...
-
+    use HasFactory;
     public function kit()
     {
         return $this->belongsTo(RoboticKit::class, 'kit_id');
