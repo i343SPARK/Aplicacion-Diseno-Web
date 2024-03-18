@@ -59,3 +59,38 @@ El desarrollo ha seguido las mejores prácticas de Laravel, incluyendo el uso de
 
 ## Diagrama ER
 ![Imagen de Portada](./imagenes/DAW%20Act%207%20ER.png)
+
+### Actividad 8
+# Aplicación de Superhéroes
+
+## Descripción
+Esta aplicación es un sistema CRUD (Crear, Leer, Actualizar, Eliminar) que permite gestionar una lista de superhéroes. Cada superhéroe tiene un nombre real, un nombre de superhéroe, una URL a una foto y información adicional.
+
+## Características
+- Registro de superhéroes en la base de datos.
+- Visualización de la lista de superhéroes registrados.
+- Edición de los detalles de los superhéroes.
+- Eliminación de superhéroes de la lista.
+
+## Tecnologías Utilizadas
+- Laravel 10.46.0
+- PHP 8.2.12
+- SQLite
+- HTML, CSS, JavaScript (Frontend)
+
+## Uso
+Para acceder a la aplicación, navegar a `http://localhost:8000/superheroes`.
+
+## Problemas Conocidos
+### Pantalla en Blanco en la Vista de Edición
+Durante el desarrollo, nos encontramos con un problema recurrente en el cual la vista de edición (`edit.blade.php`) resultaba en una pantalla en blanco. Se llevaron a cabo las siguientes acciones de depuración sin encontrar una solución definitiva:
+
+- Revisión de los logs de Laravel y del servidor web.
+- Asegurarse de que la configuración de `APP_DEBUG` estuviera en `true`.
+- Limpieza de todas las cachés de Laravel.
+- Depuración directa en el controlador y en la vista con `dd()`.
+- Revisión de la estructura y sintaxis del archivo `edit.blade.php`.
+- Confirmación de la existencia y correcto funcionamiento del layout base.
+- Verificación de los permisos de archivos y carpetas.
+
+El problema persistió a pesar de los pasos de depuración, y sigue pendiente de resolución. Se recomienda continuar con la revisión de la configuración del servidor y el entorno de desarrollo para posibles incompatibilidades o problemas de configuración específicos.
