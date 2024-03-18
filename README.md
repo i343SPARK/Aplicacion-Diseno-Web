@@ -94,3 +94,39 @@ Durante el desarrollo, nos encontramos con un problema recurrente en el cual la 
 - Verificación de los permisos de archivos y carpetas.
 
 El problema persistió a pesar de los pasos de depuración, y sigue pendiente de resolución. Se recomienda continuar con la revisión de la configuración del servidor y el entorno de desarrollo para posibles incompatibilidades o problemas de configuración específicos.
+
+### Tarea 7
+# Sistema de Calificaciones
+
+## Descripción
+Este proyecto es un sistema de gestión de calificaciones diseñado para que los estudiantes puedan llevar un registro de sus notas por materia y por actividades evaluables.
+
+## Funcionalidades
+- Agregar, visualizar, editar y eliminar materias.
+- Dentro de cada materia, gestionar actividades evaluables como tareas, exámenes, entre otras.
+- Registrar calificaciones para cada actividad, así como la fecha de la misma.
+
+## Tecnologías
+- **Backend:** Laravel 10.46.0
+- **Frontend:** HTML, CSS y Blade templates.
+- **Base de Datos:** MySQL
+
+## Configuración del Proyecto
+
+### Requisitos Previos
+- PHP >= 8.0
+- Composer
+- MySQL
+
+### Instalación
+1. Clonar el repositorio: `git clone [url-del-repositorio]`
+2. Navegar al directorio del proyecto: `cd calificaciones`
+3. Instalar dependencias: `composer install`
+4. Crear un archivo `.env` basado en `.env.example` y configurar las variables de entorno para la base de datos.
+5. Generar la clave de la aplicación: `php artisan key:generate`
+6. Ejecutar las migraciones: `php artisan migrate`
+7. Iniciar el servidor: `php artisan serve`
+
+## Uso
+- Acceder a `http://localhost:8000/materias` para gestionar materias.
+- Acceder a `http://localhost:8000/materias/{id}/actividades` para gestionar las actividades de una materia específica.
