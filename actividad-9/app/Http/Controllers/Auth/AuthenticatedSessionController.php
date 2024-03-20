@@ -9,6 +9,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 
+use App\Mail\LoginAlertEmail;
+use Illuminate\Support\Facades\Mail;
+
 class AuthenticatedSessionController extends Controller
 {
     /**
@@ -27,6 +30,11 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
 
         $request->session()->regenerate();
+
+        if (Auth::check()) {
+            // Enviar correo de alerta de inicio de sesión
+            Mail::to(Auth::user()->email)->send(new LoginAlertEmail(Auth::user()));
+        }
 
         return redirect()->intended(route('dashboard', absolute: false));
     }

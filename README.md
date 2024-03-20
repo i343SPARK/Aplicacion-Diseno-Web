@@ -98,20 +98,20 @@ El problema persistió a pesar de los pasos de depuración, y sigue pendiente de
 ## Tarea 7
 ### Sistema de Calificaciones
 
-## Descripción
+### Descripción
 Este proyecto es un sistema de gestión de calificaciones diseñado para que los estudiantes puedan llevar un registro de sus notas por materia y por actividades evaluables.
 
-## Funcionalidades
+### Funcionalidades
 - Agregar, visualizar, editar y eliminar materias.
 - Dentro de cada materia, gestionar actividades evaluables como tareas, exámenes, entre otras.
 - Registrar calificaciones para cada actividad, así como la fecha de la misma.
 
-## Tecnologías
+### Tecnologías
 - **Backend:** Laravel 10.46.0
 - **Frontend:** HTML, CSS y Blade templates.
 - **Base de Datos:** MySQL
 
-## Configuración del Proyecto
+### Configuración del Proyecto
 
 ### Requisitos Previos
 - PHP >= 8.0
@@ -127,28 +127,51 @@ Este proyecto es un sistema de gestión de calificaciones diseñado para que los
 6. Ejecutar las migraciones: `php artisan migrate`
 7. Iniciar el servidor: `php artisan serve`
 
-## Uso
+### Uso
 - Acceder a `http://localhost:8000/materias` para gestionar materias.
 - Acceder a `http://localhost:8000/materias/{id}/actividades` para gestionar las actividades de una materia específica.
 
 ## Acrividad 9
 ### Sistema de autenticación
 
-## Descripción
+### Descripción
 
 Este proyecto es un sistema con elementos de seguridad que implementa la autenticación de usuarios utilizando Laravel 10.46.0. El sistema permite a los usuarios registrarse, iniciar sesión y acceder a un dashboard protegido.
 
-## Características
+### Características
 
 - Autenticación de usuarios.
 - Landing page para usuarios no autenticados.
 - Dashboard accesible solo para usuarios autenticados.
 - Barra de navegación dinámica que cambia según el estado de autenticación.
 
-## Requisitos Previos
+### Requisitos Previos
 
 Para ejecutar este proyecto, necesitarás tener instalado:
 - PHP ^8.0
 - Composer
 - npm
+- Un servidor local como XAMPP, WAMP, MAMP, LAMP o Laragon.
+
+## Tarea 8
+### Sistema de envio de correo
+
+### Descripción
+
+Este proyecto es un sistema con elementos de seguridad para la gestión de autenticación de usuarios. Utiliza Laravel 10.46.0 y se ha ampliado para incluir notificaciones por correo electrónico durante el registro y el inicio de sesión del usuario.
+
+### Características
+
+- Registro de usuarios con correo electrónico de verificación.
+- Inicio de sesión con alerta de correo electrónico.
+- Landing page para usuarios no autenticados.
+- Dashboard accesible solo para usuarios autenticados.
+
+### Requisitos Previos
+
+Para ejecutar este proyecto necesitarás:
+
+- PHP ^8.0
+- Composer
+- Node.js y npm
 - Un servidor local como XAMPP, WAMP, MAMP, LAMP o Laragon.
