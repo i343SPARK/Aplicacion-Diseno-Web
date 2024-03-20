@@ -49,8 +49,8 @@ Markdown es un lenguaje de marcado ligero que se utiliza para añadir formato a 
 - `git revert [id-de-la-confirmación]`
 
 
-### Actividad 7 & Tarea 6
-## Descripcion del proyecto:
+## Actividad 7 & Tarea 6
+### Descripcion del proyecto:
 Este proyecto es un sistema de gestión para una pequeña escuela de robótica, diseñado para facilitar a los profesores la organización y entrega de cursos de robótica. La plataforma permite la creación de perfiles de usuario para estudiantes, docentes y administradores, cada uno con roles y permisos distintos. Los cursos, que son el núcleo del sistema, están cuidadosamente estructurados con títulos, material didáctico asociado y se categorizan en diferentes niveles de habilidad, desde principiante hasta avanzado.
 
 El sistema se apoya en un back-end robusto construido con Laravel 10, utilizando Eloquent ORM para la interacción con la base de datos relacional. Se ha configurado un conjunto de migraciones, modelos, seeders y factories para manejar la creación y población inicial de la base de datos con datos de prueba. Además, se implementó un sistema de autenticación para asegurar el acceso y la gestión adecuada de la información.
@@ -60,8 +60,8 @@ El desarrollo ha seguido las mejores prácticas de Laravel, incluyendo el uso de
 ## Diagrama ER
 ![Imagen de Portada](./imagenes/DAW%20Act%207%20ER.png)
 
-### Actividad 8
-# Aplicación de Superhéroes
+## Actividad 8
+### Aplicación de Superhéroes
 
 ## Descripción
 Esta aplicación es un sistema CRUD (Crear, Leer, Actualizar, Eliminar) que permite gestionar una lista de superhéroes. Cada superhéroe tiene un nombre real, un nombre de superhéroe, una URL a una foto y información adicional.
@@ -95,8 +95,8 @@ Durante el desarrollo, nos encontramos con un problema recurrente en el cual la 
 
 El problema persistió a pesar de los pasos de depuración, y sigue pendiente de resolución. Se recomienda continuar con la revisión de la configuración del servidor y el entorno de desarrollo para posibles incompatibilidades o problemas de configuración específicos.
 
-### Tarea 7
-# Sistema de Calificaciones
+## Tarea 7
+### Sistema de Calificaciones
 
 ## Descripción
 Este proyecto es un sistema de gestión de calificaciones diseñado para que los estudiantes puedan llevar un registro de sus notas por materia y por actividades evaluables.
@@ -130,3 +130,25 @@ Este proyecto es un sistema de gestión de calificaciones diseñado para que los
 ## Uso
 - Acceder a `http://localhost:8000/materias` para gestionar materias.
 - Acceder a `http://localhost:8000/materias/{id}/actividades` para gestionar las actividades de una materia específica.
+
+## Acrividad 9
+### Sistema de autenticación
+
+## Descripción
+
+Este proyecto es un sistema con elementos de seguridad que implementa la autenticación de usuarios utilizando Laravel 10.46.0. El sistema permite a los usuarios registrarse, iniciar sesión y acceder a un dashboard protegido.
+
+## Características
+
+- Autenticación de usuarios.
+- Landing page para usuarios no autenticados.
+- Dashboard accesible solo para usuarios autenticados.
+- Barra de navegación dinámica que cambia según el estado de autenticación.
+
+## Requisitos Previos
+
+Para ejecutar este proyecto, necesitarás tener instalado:
+- PHP ^8.0
+- Composer
+- npm
+- Un servidor local como XAMPP, WAMP, MAMP, LAMP o Laragon.
